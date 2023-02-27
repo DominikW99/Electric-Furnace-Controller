@@ -50,8 +50,6 @@ def temp_comparator(set_temp, current_temp):
 
 class TestBasic:
 
-
-
     @classmethod
     def setup_class(self):
         print('\n===Setup Class===')
@@ -100,9 +98,8 @@ class TestBasic:
         self.fb.put('/firebase_test_1', "Schedule_setStartMinute_1", f'{start_minute}')
         self.fb.put('/firebase_test_1', "Schedule_setStopHour_1", f'{stop_hour}')
         self.fb.put('/firebase_test_1', "Schedule_setStopMinute_1", f'{stop_minute}')
-        #to tak na chwile
+
         status = 1
-        ################
         
         self.fb.put('/firebase_test_1', "Schedule_setStatus_1", f'{status}')
         self.fb.put('/firebase_test_1', "Schedule_setTemp_1", f'{set_temp}')
